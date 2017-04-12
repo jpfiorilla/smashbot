@@ -1,6 +1,6 @@
 const rp = require('request-promise');
 const cheerio = require('cheerio');
-
+const ffmpeg = require('fluent-ffmpeg');
 
 const getLink = function(){
     let crawlOptions = {
@@ -8,8 +8,16 @@ const getLink = function(){
         // transform: (body) => cheerio.load(body)
     }
     rp(crawlOptions).then(res => {
-        console.log(res.includes('cn-card__title'));
+        console.log(res.includes('card__title'));
     })
     // cn-card__title
 }
-getLink();
+// getLink();
+
+const checkVideo = function(){
+    let videoFilters = [{filter: 'fade', options: ['in', 0, 60]}];
+    let command = ffmpeg('./videos/' + 'm2k.mp4')
+                        .videoFilters(videoFilters)
+                        // .save('test.mp4')
+}
+checkVideo();
