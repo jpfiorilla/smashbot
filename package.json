@@ -12,6 +12,7 @@
     "cheerio": "^0.22.0",
     "es6-promisify": "^5.0.0",
     "fluent-ffmpeg": "^2.1.0",
+    "fs": "0.0.1-security",
     "request-promise": "^4.2.0"
   }
 }

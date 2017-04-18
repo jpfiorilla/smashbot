@@ -1,0 +1,1605 @@
+{
+	"abench": {
+		"description": "Benchmark part of a filtergraph.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"acompressor": {
+		"description": "Audio compressor.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"acrossfade": {
+		"description": "Cross fade two input audio streams.",
+		"input": "audio",
+		"multipleInputs": true,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"acrusher": {
+		"description": "Reduce audio bit resolution.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"adelay": {
+		"description": "Delay one or more audio channels.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"aecho": {
+		"description": "Add echoing to the audio.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"aemphasis": {
+		"description": "Audio emphasis.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"aeval": {
+		"description": "Filter audio signal according to a specified expression.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"afade": {
+		"description": "Fade in/out input audio.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"afftfilt": {
+		"description": "Apply arbitrary expressions to samples in frequency domain.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"aformat": {
+		"description": "Convert the input audio to one of the specified formats.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"agate": {
+		"description": "Audio gate.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"alimiter": {
+		"description": "Audio lookahead limiter.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"allpass": {
+		"description": "Apply a two-pole all-pass filter.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"aloop": {
+		"description": "Loop audio samples.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"ametadata": {
+		"description": "Manipulate audio frame metadata.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"anull": {
+		"description": "Pass the source unchanged to the output.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"apad": {
+		"description": "Pad audio with silence.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"aperms": {
+		"description": "Set permissions for the output audio frame.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"aphaser": {
+		"description": "Add a phasing effect to the audio.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"apulsator": {
+		"description": "Audio pulsator.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"arealtime": {
+		"description": "Slow down filtering to match realtime.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"aresample": {
+		"description": "Resample audio data.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"areverse": {
+		"description": "Reverse an audio clip.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"asendcmd": {
+		"description": "Send commands to filters.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"asetnsamples": {
+		"description": "Set the number of samples for each output audio frames.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"asetpts": {
+		"description": "Set PTS for the output audio frame.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"asetrate": {
+		"description": "Change the sample rate without altering the data.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"asettb": {
+		"description": "Set timebase for the audio output link.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"ashowinfo": {
+		"description": "Show textual information for each audio frame.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"asidedata": {
+		"description": "Manipulate audio frame side data.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"astats": {
+		"description": "Show time domain statistics about audio frames.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"atempo": {
+		"description": "Adjust audio tempo.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"atrim": {
+		"description": "Pick one continuous section from the input, drop the rest.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"bandpass": {
+		"description": "Apply a two-pole Butterworth band-pass filter.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"bandreject": {
+		"description": "Apply a two-pole Butterworth band-reject filter.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"bass": {
+		"description": "Boost or cut lower frequencies.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"biquad": {
+		"description": "Apply a biquad IIR filter with the given coefficients.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"channelmap": {
+		"description": "Remap audio channels.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"chorus": {
+		"description": "Add a chorus effect to the audio.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"compand": {
+		"description": "Compress or expand audio dynamic range.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"compensationdelay": {
+		"description": "Audio Compensation Delay Line.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"crystalizer": {
+		"description": "Simple expand audio dynamic range filter.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"dcshift": {
+		"description": "Apply a DC shift to the audio.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"dynaudnorm": {
+		"description": "Dynamic Audio Normalizer.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"earwax": {
+		"description": "Widen the stereo image.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"equalizer": {
+		"description": "Apply two-pole peaking equalization (EQ) filter.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"extrastereo": {
+		"description": "Increase difference between stereo audio channels.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"firequalizer": {
+		"description": "Finite Impulse Response Equalizer.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"flanger": {
+		"description": "Apply a flanging effect to the audio.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"hdcd": {
+		"description": "Apply High Definition Compatible Digital (HDCD) decoding.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"highpass": {
+		"description": "Apply a high-pass filter with 3dB point frequency.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"lowpass": {
+		"description": "Apply a low-pass filter with 3dB point frequency.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"pan": {
+		"description": "Remix channels with coefficients (panning).",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"replaygain": {
+		"description": "ReplayGain scanner.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"sidechaincompress": {
+		"description": "Sidechain compressor.",
+		"input": "audio",
+		"multipleInputs": true,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"sidechaingate": {
+		"description": "Audio sidechain gate.",
+		"input": "audio",
+		"multipleInputs": true,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"silencedetect": {
+		"description": "Detect silence.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"silenceremove": {
+		"description": "Remove silence.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"stereotools": {
+		"description": "Apply various stereo tools.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"stereowiden": {
+		"description": "Apply stereo widening effect.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"treble": {
+		"description": "Boost or cut upper frequencies.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"tremolo": {
+		"description": "Apply tremolo effect.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"vibrato": {
+		"description": "Apply vibrato effect.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"volume": {
+		"description": "Change input volume.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"volumedetect": {
+		"description": "Detect audio volume.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"aevalsrc": {
+		"description": "Generate an audio signal generated by an expression.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"anoisesrc": {
+		"description": "Generate a noise audio signal.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"anullsrc": {
+		"description": "Null audio source, return empty audio frames.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"sine": {
+		"description": "Generate sine wave audio signal.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"anullsink": {
+		"description": "Do absolutely nothing with the input audio.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "none",
+		"multipleOutputs": false
+	},
+	"alphamerge": {
+		"description": "Copy the luma value of the second input into the alpha channel of the first input.",
+		"input": "video",
+		"multipleInputs": true,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"atadenoise": {
+		"description": "Apply an Adaptive Temporal Averaging Denoiser.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"avgblur": {
+		"description": "Apply Average Blur filter.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"bbox": {
+		"description": "Compute bounding box for each frame.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"bench": {
+		"description": "Benchmark part of a filtergraph.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"bitplanenoise": {
+		"description": "Measure bit plane noise.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"blackdetect": {
+		"description": "Detect video intervals that are (almost) black.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"blend": {
+		"description": "Blend two video frames into each other.",
+		"input": "video",
+		"multipleInputs": true,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"bwdif": {
+		"description": "Deinterlace the input image.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"chromakey": {
+		"description": "Turns a certain color into transparency. Operates on YUV colors.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"ciescope": {
+		"description": "Video CIE scope.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"codecview": {
+		"description": "Visualize information about some codecs.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"colorbalance": {
+		"description": "Adjust the color balance.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"colorchannelmixer": {
+		"description": "Adjust colors by mixing color channels.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"colorkey": {
+		"description": "Turns a certain color into transparency. Operates on RGB colors.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"colorlevels": {
+		"description": "Adjust the color levels.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"colorspace": {
+		"description": "Convert between colorspaces.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"convolution": {
+		"description": "Apply convolution filter.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"copy": {
+		"description": "Copy the input video unchanged to the output.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"crop": {
+		"description": "Crop the input video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"curves": {
+		"description": "Adjust components curves.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"datascope": {
+		"description": "Video data analysis.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"dctdnoiz": {
+		"description": "Denoise frames using 2D DCT.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"deband": {
+		"description": "Debands video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"deflate": {
+		"description": "Apply deflate effect.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"dejudder": {
+		"description": "Remove judder produced by pullup.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"deshake": {
+		"description": "Stabilize shaky video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"detelecine": {
+		"description": "Apply an inverse telecine pattern.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"dilation": {
+		"description": "Apply dilation effect.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"drawbox": {
+		"description": "Draw a colored box on the input video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"drawgraph": {
+		"description": "Draw a graph using input video metadata.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"drawgrid": {
+		"description": "Draw a colored grid on the input video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"edgedetect": {
+		"description": "Detect and draw edge.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"elbg": {
+		"description": "Apply posterize effect, using the ELBG algorithm.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"erosion": {
+		"description": "Apply erosion effect.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"fade": {
+		"description": "Fade in/out input video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"fftfilt": {
+		"description": "Apply arbitrary expressions to pixels in frequency domain.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"field": {
+		"description": "Extract a field from the input video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"fieldhint": {
+		"description": "Field matching using hints.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"fieldorder": {
+		"description": "Set the field order.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"format": {
+		"description": "Convert the input video to one of the specified pixel formats.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"fps": {
+		"description": "Force constant framerate.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"framepack": {
+		"description": "Generate a frame packed stereoscopic video.",
+		"input": "video",
+		"multipleInputs": true,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"framerate": {
+		"description": "Upsamples or downsamples progressive source between specified frame rates.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"framestep": {
+		"description": "Select one frame every N frames.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"gblur": {
+		"description": "Apply Gaussian Blur filter.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"gradfun": {
+		"description": "Debands video quickly using gradients.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"haldclut": {
+		"description": "Adjust colors using a Hald CLUT.",
+		"input": "video",
+		"multipleInputs": true,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"hflip": {
+		"description": "Horizontally flip the input video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"histogram": {
+		"description": "Compute and draw a histogram.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"hqx": {
+		"description": "Scale the input by 2, 3 or 4 using the hq*x magnification algorithm.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"hue": {
+		"description": "Adjust the hue and saturation of the input video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"hwdownload": {
+		"description": "Download a hardware frame to a normal frame",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"hwupload": {
+		"description": "Upload a normal frame to a hardware frame",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"hysteresis": {
+		"description": "Grow first stream into second stream by connecting components.",
+		"input": "video",
+		"multipleInputs": true,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"idet": {
+		"description": "Interlace detect Filter.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"il": {
+		"description": "Deinterleave or interleave fields.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"inflate": {
+		"description": "Apply inflate effect.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"lenscorrection": {
+		"description": "Rectify the image by correcting for lens distortion.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"loop": {
+		"description": "Loop video frames.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"lut": {
+		"description": "Compute and apply a lookup table to the RGB/YUV input video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"lut2": {
+		"description": "Compute and apply a lookup table from two video inputs.",
+		"input": "video",
+		"multipleInputs": true,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"lut3d": {
+		"description": "Adjust colors using a 3D LUT.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"lutrgb": {
+		"description": "Compute and apply a lookup table to the RGB input video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"lutyuv": {
+		"description": "Compute and apply a lookup table to the YUV input video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"mestimate": {
+		"description": "Generate motion vectors.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"metadata": {
+		"description": "Manipulate video frame metadata.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"minterpolate": {
+		"description": "Frame rate conversion using Motion Interpolation.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"negate": {
+		"description": "Negate input video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"nlmeans": {
+		"description": "Non-local means denoiser.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"noformat": {
+		"description": "Force libavfilter not to use any of the specified pixel formats for the input to the next filter.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"noise": {
+		"description": "Add noise.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"null": {
+		"description": "Pass the source unchanged to the output.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"overlay": {
+		"description": "Overlay a video source on top of the input.",
+		"input": "video",
+		"multipleInputs": true,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"pad": {
+		"description": "Pad the input video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"palettegen": {
+		"description": "Find the optimal palette for a given stream.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"paletteuse": {
+		"description": "Use a palette to downsample an input video stream.",
+		"input": "video",
+		"multipleInputs": true,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"perms": {
+		"description": "Set permissions for the output video frame.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"pixdesctest": {
+		"description": "Test pixel format definitions.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"prewitt": {
+		"description": "Apply prewitt operator.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"psnr": {
+		"description": "Calculate the PSNR between two video streams.",
+		"input": "video",
+		"multipleInputs": true,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"qp": {
+		"description": "Change video quantization parameters.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"random": {
+		"description": "Return random frames.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"readvitc": {
+		"description": "Read vertical interval timecode and write it to frame metadata.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"realtime": {
+		"description": "Slow down filtering to match realtime.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"removegrain": {
+		"description": "Remove grain.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"removelogo": {
+		"description": "Remove a TV logo based on a mask image.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"reverse": {
+		"description": "Reverse a clip.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"rotate": {
+		"description": "Rotate the input image.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"scale": {
+		"description": "Scale the input video size and/or convert the image format.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"scale2ref": {
+		"description": "Scale the input video size and/or convert the image format to the given reference.",
+		"input": "video",
+		"multipleInputs": true,
+		"output": "video",
+		"multipleOutputs": true
+	},
+	"selectivecolor": {
+		"description": "Apply CMYK adjustments to specific color ranges.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"sendcmd": {
+		"description": "Send commands to filters.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"separatefields": {
+		"description": "Split input video frames into fields.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"setdar": {
+		"description": "Set the frame display aspect ratio.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"setfield": {
+		"description": "Force field for the output video frame.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"setpts": {
+		"description": "Set PTS for the output video frame.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"setsar": {
+		"description": "Set the pixel sample aspect ratio.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"settb": {
+		"description": "Set timebase for the video output link.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"showinfo": {
+		"description": "Show textual information for each video frame.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"showpalette": {
+		"description": "Display frame palette.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"shuffleframes": {
+		"description": "Shuffle video frames.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"shuffleplanes": {
+		"description": "Shuffle video planes.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"sidedata": {
+		"description": "Manipulate video frame side data.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"signalstats": {
+		"description": "Generate statistics from video analysis.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"sobel": {
+		"description": "Apply sobel operator.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"ssim": {
+		"description": "Calculate the SSIM between two video streams.",
+		"input": "video",
+		"multipleInputs": true,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"swaprect": {
+		"description": "Swap 2 rectangular objects in video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"swapuv": {
+		"description": "Swap U and V components.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"tblend": {
+		"description": "Blend successive frames.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"telecine": {
+		"description": "Apply a telecine pattern.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"thumbnail": {
+		"description": "Select the most representative frame in a given sequence of consecutive frames.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"tile": {
+		"description": "Tile several successive frames together.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"transpose": {
+		"description": "Transpose input video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"trim": {
+		"description": "Pick one continuous section from the input, drop the rest.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"unsharp": {
+		"description": "Sharpen or blur the input video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"vectorscope": {
+		"description": "Video vectorscope.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"vflip": {
+		"description": "Flip the input video vertically.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"vignette": {
+		"description": "Make or reverse a vignette effect.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"w3fdif": {
+		"description": "Apply Martin Weston three field deinterlace.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"waveform": {
+		"description": "Video waveform monitor.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"weave": {
+		"description": "Weave input video fields into frames.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"xbr": {
+		"description": "Scale the input using xBR algorithm.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"yadif": {
+		"description": "Deinterlace the input image.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"zoompan": {
+		"description": "Apply Zoom & Pan effect.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"allrgb": {
+		"description": "Generate all RGB colors.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"allyuv": {
+		"description": "Generate all yuv colors.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"cellauto": {
+		"description": "Create pattern generated by an elementary cellular automaton.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"color": {
+		"description": "Provide an uniformly colored input.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"haldclutsrc": {
+		"description": "Provide an identity Hald CLUT.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"life": {
+		"description": "Create life.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"mandelbrot": {
+		"description": "Render a Mandelbrot fractal.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"nullsrc": {
+		"description": "Null video source, return unprocessed video frames.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"rgbtestsrc": {
+		"description": "Generate RGB test pattern.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"smptebars": {
+		"description": "Generate SMPTE color bars.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"smptehdbars": {
+		"description": "Generate SMPTE HD color bars.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"testsrc": {
+		"description": "Generate test pattern.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"testsrc2": {
+		"description": "Generate another test pattern.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"yuvtestsrc": {
+		"description": "Generate YUV test pattern.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"nullsink": {
+		"description": "Do absolutely nothing with the input video.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "none",
+		"multipleOutputs": false
+	},
+	"adrawgraph": {
+		"description": "Draw a graph using input audio metadata.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"ahistogram": {
+		"description": "Convert input audio to histogram video output.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"aphasemeter": {
+		"description": "Convert input audio to phase meter video output.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"avectorscope": {
+		"description": "Convert input audio to vectorscope video output.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"showcqt": {
+		"description": "Convert input audio to a CQT (Constant/Clamped Q Transform) spectrum video output.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"showfreqs": {
+		"description": "Convert input audio to a frequencies video output.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"showspectrum": {
+		"description": "Convert input audio to a spectrum video output.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"showspectrumpic": {
+		"description": "Convert input audio to a spectrum video output single picture.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"showvolume": {
+		"description": "Convert input audio volume to video output.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"showwaves": {
+		"description": "Convert input audio to a video output.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"showwavespic": {
+		"description": "Convert input audio to a video output single picture.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"spectrumsynth": {
+		"description": "Convert input spectrum videos to audio output.",
+		"input": "video",
+		"multipleInputs": true,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"abuffer": {
+		"description": "Buffer audio frames, and make them accessible to the filterchain.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"buffer": {
+		"description": "Buffer video frames, and make them accessible to the filterchain.",
+		"input": "none",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	},
+	"abuffersink": {
+		"description": "Buffer audio frames, and make them available to the end of the filter graph.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "none",
+		"multipleOutputs": false
+	},
+	"buffersink": {
+		"description": "Buffer video frames, and make them available to the end of the filter graph.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "none",
+		"multipleOutputs": false
+	},
+	"afifo": {
+		"description": "Buffer input frames and send them when they are requested.",
+		"input": "audio",
+		"multipleInputs": false,
+		"output": "audio",
+		"multipleOutputs": false
+	},
+	"fifo": {
+		"description": "Buffer input images and send them when they are requested.",
+		"input": "video",
+		"multipleInputs": false,
+		"output": "video",
+		"multipleOutputs": false
+	}
+}

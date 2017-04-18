@@ -1,9 +1,10 @@
 const rp = require('request-promise');
+const fs = require('fs');
 const cheerio = require('cheerio');
 const ffmpeg = require('fluent-ffmpeg');
 const promisify = require('es6-promisify');
 const ffprobe = promisify(ffmpeg.ffprobe, {multiArgs: true});
-const filters = require('/filters');
+const filters = require('./filters');
 
 const getLink = function(){
     let crawlOptions = {
@@ -42,4 +43,7 @@ const checkVideo = function(){
 // checkVideo();
 
 // log filters
-// ffmpeg.getAvailableFilters((err, filters) => console.dir(filters));
+ffmpeg.getAvailableFilters((err, filters) => {
+    let f = JSON.stringify(filters, null, '\t')
+    fs.writeFileSync('filtersList.txt', f, (err) => console.error(err))
+});
