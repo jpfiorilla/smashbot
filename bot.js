@@ -1,6 +1,9 @@
 const rp = require('request-promise');
 const cheerio = require('cheerio');
 const ffmpeg = require('fluent-ffmpeg');
+const promisify = require('es6-promisify');
+const ffprobe = promisify(ffmpeg.ffprobe, {multiArgs: true});
+const filters = require('/filters');
 
 const getLink = function(){
     let crawlOptions = {
@@ -14,10 +17,29 @@ const getLink = function(){
 }
 // getLink();
 
-const checkVideo = function(){
-    let videoFilters = [{filter: 'fade', options: ['in', 0, 60]}];
-    let command = ffmpeg('./videos/' + 'm2k.mp4')
-                        .videoFilters(videoFilters)
-                        // .save('test.mp4')
+const getInfo = function(){
+    // return ffmpeg.ffprobe('./videos/' + 'm2k.mp4', function(err, metadata) {
+    //     console.dir(metadata.streams[0]);
+    //     let { width, height, duration, duration_ts, r_frame_rate } = metadata.streams[0];
+    //     return metadata.streams[0].width;
+    // });
+    return ffprobe('./videos/' + 'm2k.mp4').then(meta => {
+        let { width, height, duration, duration_ts, r_frame_rate } = meta[0].streams;
+        console.log(meta[0].streams);
+        return { width, height, duration, duration_ts, r_frame_rate };
+    })
 }
-checkVideo();
+// console.log(getInfo());
+
+const checkVideo = function(){
+    let videoFilters = [
+            { filter: 'fade', options: 'in:0:60' }
+        ];
+    ffmpeg('./videos/' + 'm2k.mp4')
+          .videoFilters(videoFilters)
+          .save('test.mp4')
+}
+// checkVideo();
+
+// log filters
+// ffmpeg.getAvailableFilters((err, filters) => console.dir(filters));
