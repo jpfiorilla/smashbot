@@ -33,17 +33,22 @@ const getInfo = function(){
 // console.log(getInfo());
 
 const checkVideo = function(){
+    let audioFilters = [
+        // { filter: 'aecho' }
+        filters.audioFilters.aecho(300, 0.3)
+    ]
     let videoFilters = [
-            { filter: 'fade', options: 'in:0:60' }
+            // { filter: 'fade', options: 'in:0:60' }
         ];
     ffmpeg('./videos/' + 'm2k.mp4')
-          .videoFilters(videoFilters)
+          .audioFilters(audioFilters)
+        //   .videoFilters(videoFilters)
           .save('test.mp4')
 }
-// checkVideo();
+checkVideo();
 
 // log filters
-ffmpeg.getAvailableFilters((err, filters) => {
-    let f = JSON.stringify(filters, null, '\t')
-    fs.writeFileSync('filtersList.txt', f, (err) => console.error(err))
-});
+// ffmpeg.getAvailableFilters((err, filters) => {
+//     let f = JSON.stringify(filters, null, '\t')
+//     fs.writeFileSync('filtersList.txt', f, (err) => console.error(err))
+// });
