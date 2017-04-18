@@ -33,9 +33,10 @@ const getInfo = function(){
 // console.log(getInfo());
 
 const checkVideo = function(){
+    let v = filters.videoFilters, a = filters.audioFilters;
     let audioFilters = [
-        // { filter: 'aecho' }
-        filters.audioFilters.aecho(300, 0.3)
+        // filters.audioFilters.aecho()
+        a.afade()
     ]
     let videoFilters = [
             // { filter: 'fade', options: 'in:0:60' }
