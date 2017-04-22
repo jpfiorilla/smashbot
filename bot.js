@@ -25,12 +25,11 @@ const getInfo = function(){
     //     return metadata.streams[0].width;
     // });
     return ffprobe('./videos/' + 'm2k.mp4').then(meta => {
-        let { width, height, duration, duration_ts, r_frame_rate } = meta[0].streams;
-        console.log(meta[0].streams);
+        let { width, height, duration, duration_ts, r_frame_rate } = meta[0].streams[0];
         return { width, height, duration, duration_ts, r_frame_rate };
     })
 }
-// console.log(getInfo());
+getInfo().then(data => console.log(data))
 
 const checkVideo = function(){
     let v = filters.videoFilters, a = filters.audioFilters;
@@ -46,7 +45,7 @@ const checkVideo = function(){
         //   .videoFilters(videoFilters)
           .save('test.mp4')
 }
-checkVideo();
+// checkVideo()
 
 // log filters
 // ffmpeg.getAvailableFilters((err, filters) => {
