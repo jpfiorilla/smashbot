@@ -1,9 +1,5 @@
 const ffmpeg = require('fluent-ffmpeg');
 
-let fade = function(start, end){
-    return { filter: 'fade', options: `in:${start}:${end}` }
-}
-
 let aecho = function(delays = 250, decays = 0.3, in_gain = 0.6, out_gain = 0.3){
     return { filter: 'aecho', options: `${in_gain}:${out_gain}:${delays}:${decays}` };
 }
@@ -14,13 +10,23 @@ let afade = function(type = 'in', start_time = 0, duration = 1, curve){
     return { filter: 'afade', options }
 }
 
-let videoFilters = {
+let fade = function(start = 0, end = 60){
+    return { filter: 'fade', options: `in:${start}:${end}` }
+}
+
+let avgblur = function(sizeX = 1, planes, sizeY){
+    let options = `sizeX=${sizeX}`
+    return { filter: 'avgblur', options }
+}
+
+let v = {
+    avgblur,
     fade
 }
 
-let audioFilters = {
+let a = {
     aecho,
     afade
 }
 
-module.exports = { videoFilters, audioFilters };
+module.exports = { v, a };
